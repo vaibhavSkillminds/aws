@@ -19,7 +19,7 @@ function App() {
     setError('');
     
     try {
-      const response = await axios.get('http://localhost:5000/api/data');
+      const response = await axios.get('http://13.203.105.84:5000/api/data');
       setUserData(response.data.data);
     } catch (err) {
       console.error('Error fetching data:', err);
